@@ -1,0 +1,79 @@
+/* ======================== Contact ======================== */
+
+#main__contact {
+  min-height: 75vh;
+  background: url("../images/logo.jpg") center / contain no-repeat fixed;
+}
+
+#contact-container {
+  width: 100%;
+  min-height: 75vh;
+
+  background: var(--BG-TRANSPARENT--LIGHT);
+  color: darkblue;
+}
+
+#contact-container h1 {
+  font-size: var(--FS-LARGE);
+  text-shadow: .075em .075em .125em lightblue;
+  margin-bottom: var(--SPACING-SMALL);
+}
+
+#contact-container>p {
+  font-size: var(--FS-MEDIUM);
+}
+
+#contact-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: var(--SPACING-MEDIUM);
+
+  padding: var(--SPACING-LARGE) var(--SPACING-MEDIUM);
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: var(--SPACING-SMALL);
+        column-gap: var(--SPACING-SMALL);
+
+  color: darkmagenta;
+  pointer-events: none;
+  font-size: var(--FS-SMALL);
+  overflow-wrap: anywhere;
+}
+
+.contact-box:is(:hover, :focus) {
+  color: dodgerblue;
+}
+
+.contact-box:active {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.contact-box img,
+.contact-box p {
+  pointer-events: all;
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media only screen and (min-width: 576px) {
+  #contact-container h1 {
+    font-size: var(--FS-LARGEST);
+  }
+
+  #contact-container>p {
+    font-size: var(--FS-LARGE);
+  }
+
+  .contact-box {
+    font-size: var(--FS-MEDIUM);
+  }
+}

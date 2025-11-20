@@ -1,0 +1,265 @@
+/* ======================== Events ======================== */
+
+#main__events {
+  background: linear-gradient(peachpuff, lightblue, lightgoldenrodyellow, skyblue);
+  padding-bottom: 10vh;
+}
+
+#main__events h2 {
+  font-size: var(--FS-LARGE);
+}
+
+#upcoming-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--SPACING-MEDIUM);
+
+  margin-bottom: var(--SPACING-LARGE);
+  padding: 0 var(--SPACING-MEDIUM) var(--SPACING-MEDIUM);
+
+  background: linear-gradient(to right, hotpink, plum, pink, purple);
+}
+
+#upcoming-events__content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: var(--SPACING-LARGE);
+  align-items: center;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@-webkit-keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+@-webkit-keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logo-img__container {
+  width: 90%;
+  max-width: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background-color: green;
+  border-radius: 50%;
+
+  -webkit-animation: enlarge 5s infinite linear;
+          animation: enlarge 5s infinite linear;
+}
+
+#upcoming-events img {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 50%;
+}
+
+#logo-img__container::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  width: 105%;
+  height: 105%;
+
+  background: conic-gradient(from var(--angle), #a50c14, #6facdd, #e5b951, #94bf4e);
+  -webkit-filter: blur(0.5em);
+          filter: blur(0.5em);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+#upcoming-events__content p {
+  font-size: var(--FS-LARGEST);
+}
+
+#event-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--SPACING-LARGE);
+
+  margin: var(--SPACING-LARGE) 0 var(--SPACING-LARGER);
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--SPACING-SMALL);
+  align-items: center;
+
+  width: 90%;
+  max-width: 300px;
+
+  background: linear-gradient(red, coral, crimson);
+  color: white;
+  border-radius: 2em;
+  box-shadow: .25em .25em .125em #000;
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+}
+
+.event-card p {
+  font-size: var(--FS-MEDIUM);
+  padding: var(--SPACING-SMALL);
+}
+
+h3 {
+  font-size: var(--FS-LARGE);
+}
+
+a#women-of-purpose {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+
+  pointer-events: none;
+}
+
+#women-of-purpose img {
+  width: 100%;
+  height: auto;
+
+  margin: var(--SPACING-MEDIUM) 0 var(--SPACING-SMALL);
+
+  pointer-events: all;
+  border-radius: 3em;
+}
+
+#women-of-purpose img:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+#women-of-purpose img:active {
+  -webkit-filter: brightness(1.5);
+          filter: brightness(1.5);
+}
+
+#women-of-purpose button {
+  width: 100%;
+  padding: var(--SPACING-SMALL);
+
+  pointer-events: all;
+  border-radius: 2em;
+  cursor: pointer;
+  border: .25em solid goldenrod;
+  background-color: darkblue;
+  color: plum;
+  font-size: var(--FS-SMALL);
+}
+
+#women-of-purpose button:is(:hover, :focus) {
+  background-color: blue;
+}
+
+#women-of-purpose button:active {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media only screen and (min-width: 576px) {
+  #main__events h2 {
+    font-size: var(--FS-LARGEST);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  #event-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: var(--SPACING-MEDIUM);
+          column-gap: var(--SPACING-MEDIUM);
+    justify-content: center;
+  }
+
+  .event-card {
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #upcoming-events__content  {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

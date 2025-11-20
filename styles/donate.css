@@ -1,0 +1,213 @@
+/* ======================== Donate ======================== */
+
+#main__donate {
+  padding: 0 var(--SPACING-SMALL) 5vh;
+  background: linear-gradient(peachpuff, lightblue, lightgoldenrodyellow, skyblue);
+}
+
+#donate__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--SPACING-MEDIUM);
+}
+
+#donate__intro h1 {
+  font-size: var(--FS-LARGEST);
+}
+
+#donate__intro p {
+  font-size: var(--FS-LARGE);
+}
+
+#donate__intro #contact-us {
+  font-size: var(--FS-MEDIUM);
+  margin-bottom: var(--SPACING-LARGE);
+}
+
+#donate__intro ul {
+  max-width: 500px;
+  list-style-position: inside;
+  margin: var(--SPACING-LARGE) auto 0;
+}
+
+#donate__intro li {
+  margin: var(--SPACING-SMALL) auto;
+  font-size: var(--FS-SMALL);
+}
+
+#donate__intro a {
+  color: darkblue;
+  text-decoration: underline;
+  transition: all .5s;
+}
+
+#donate__intro a:is(:hover, :focus) {
+  color: dodgerblue;
+}
+
+#donate__intro a:active {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+#donate__intro img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+h2 {
+  margin-top: var(--SPACING-LARGER);
+  font-size: var(--FS-LARGE);
+}
+
+#main__donate>p {
+  font-size: var(--FS-MEDIUM);
+}
+
+#donation-categories {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--SPACING-MEDIUM);
+  margin: var(--SPACING-LARGE);
+}
+
+img.donation-category {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 25%;
+  box-shadow: .25em .25em .125em #000;
+  transition: all .5s;
+}
+
+img.donation-category:hover {
+  transform: scale(1.1);
+}
+
+.donation-category--info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--SPACING-MEDIUM);
+  border: .25em solid #000;
+}
+
+.donation-category--info-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--SPACING-MEDIUM);
+  padding: 0 var(--SPACING-SMALL) 5vh;
+}
+
+.donation-category--info-overview h3 {
+  margin-top: var(--SPACING-SMALL);
+  font-size: var(--FS-LARGE);
+}
+
+.donation-category--info-overview img {
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+}
+
+.donation-category--info-overview p {
+  font-size: var(--FS-MEDIUM);
+}
+
+
+.donate-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--SPACING-MEDIUM);
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20vh;
+  height: 100%;
+
+  padding: var(--SPACING-SMALL);
+
+  background: linear-gradient(aqua, aquamarine);
+  box-shadow: -.25em .25em .125em #000;
+}
+
+.donate--text h4 {
+  font-size: var(--FS-LARGE);
+  margin-bottom: var(--SPACING-SMALL);
+}
+
+.donate--text p {
+  font-size: var(--FS-SMALL);
+}
+
+.donate__banking-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate__banking-details img {
+  width: 90%;
+  max-width: 150px;
+  height: auto;
+}
+
+.donate__banking-details h5 {
+  margin: var(--SPACING-SMALL) 0;
+  font-size: var(--FS-MEDIUM);
+}
+
+.banking-details--info p {
+  font-size: var(--FS-SMALL);
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media only screen and (min-width: 992px) {
+  #donate__intro {
+    flex-direction: row;
+    -moz-column-gap: var(--SPACING-MEDIUM);
+          column-gap: var(--SPACING-MEDIUM);
+  }
+
+  #donate__intro-info {
+    width: 60%;
+  }
+
+  #donate__intro img {
+    width: 40%;
+  }
+
+  #donation-categories {
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: var(--SPACING-LARGE);
+          column-gap: var(--SPACING-LARGE);
+  }
+
+  img.donation-category {
+    width: 20%;
+    margin: 0;
+  }
+
+  .donation-category--info {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .donation-category--info-overview {
+    width: 60%;
+  }
+
+  .donate-now {
+    width: 40%;
+  }
+}

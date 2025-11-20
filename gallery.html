@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <!-- Character Encoding (Ensure proper text rendering) -->
+
+        <!-- Favicon (Ensure both formats for maximum compatibility and visual quality) -->
+        <!-- Favicon in .ico format for older browsers like Internet Explorer -->
+        <link rel="icon" href="images/favicon--ico.ico" type="image/x-icon">
+
+        <!-- Favicon in .png format for modern browsers with transparency support -->
+        <link rel="icon" href="images/favicon--png.png" type="image/png">
+
+        <!-- Viewport Meta Tag (For responsive design on mobile devices) -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title Tag (Displayed in the browser tab and used for SEO) -->
+        <title>Gallery | Giving With A Purpose Foundation</title>
+
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+            content="Explore the Giving With A Purpose Foundation gallery featuring photos from our community events, outreach programs, and charitable missions that inspire hope.">
+        <meta name="keywords"
+            content="Giving With A Purpose Foundation gallery, charity organization gallery, community support photos, nonprofit foundation photos, donate to charity, charity programs gallery, community outreach pictures, Eldoradopark, Bashier Sinclair, Nazlee Alberts, Soweto, alleviate hunger">
+        <meta name="author" content="Giving With A Purpose Foundation">
+
+        <!-- Robots Meta Tag (Tells search engines to index and follow links) -->
+        <meta name="robots" content="index, follow">
+
+        <!-- Open Graph Meta Tags (For social media sharing like Facebook, LinkedIn, etc.) -->
+        <meta property="og:title"
+            content="Gallery | Giving With A Purpose Foundation">
+        <meta property="og:type" content="website">
+        <!-- TODO: Add actual URL of the Gallery page -->
+        <meta property="og:url" content="">
+        <!-- TODO: Add an actual image URL for the Open Graph image -->
+        <meta property="og:image" content="">
+        <meta property="og:description"
+            content="Explore the Giving With A Purpose Foundation gallery featuring photos from our community events, outreach programs, and charitable missions that inspire hope.">
+        <meta property="og:site_name" content="Giving With A Purpose Foundation">
+        <meta property="og:locale" content="en_ZA">
+
+        <!-- Twitter Meta Tags (For Twitter card display) -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title"
+            content="Gallery | Giving With A Purpose Foundation">
+        <meta name="twitter:description"
+            content="Explore the Giving With A Purpose Foundation gallery featuring photos from our community events, outreach programs, and charitable missions that inspire hope.">
+        <!-- TODO: Add actual image URL for the Twitter image -->
+        <meta name="twitter:image" content="">
+
+        <!-- Links to external CSS stylesheets -->
+        <link rel="stylesheet" href="styles/shared.css">
+        <link rel="stylesheet" href="styles/gallery.css">
+
+        <!-- Links to external JS files -->
+        <script src="scripts/main.js" defer></script>
+        <script src="scripts/gallery.js" type="module"></script>
+
+        <!-- Font Awesome (For adding icons) -->
+        <link rel="stylesheet" href="fontAwesome/css/all.css">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="header-logo">
+                <a href="index.html" title="Home" aria-label="Home">
+                    <img src="images/logo--icon.png" alt="Logo" width="400">
+                    <h1>Giving With A Purpose Foundation</h1>
+                </a>
+            </div>
+            <label for="header-menu-button">
+                <i class="fa-solid fa-bars" title="Open Menu"></i>
+            </label>
+            <input type="checkbox" id="header-menu-button">
+            <div class="header-tabs">
+                <label for="header-menu-button">
+                    <i class="fa-solid fa-close" title="Close Menu"></i>
+                </label>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="donate.html">Donate</a>
+                <a href="faq.html">FAQs</a>
+                <a href="events.html">Events</a>
+            </div>
+        </header>
+
+        <main id="main__gallery">
+            <h1 class="center">Gallery</h1>
+
+            <h2 class="center">Community Feeding</h2>
+            <section id="community-feeding">
+                <div id="community-feeding__slider-container">
+                    <div id="community-feeding__slider"></div>
+                    <div id="community-feeding__slider-controls">
+                        <i id="navPrev" class="fa-solid fa-chevron-circle-left"></i>
+                        <i id="play" class="fa-solid fa-play"></i>
+                        <i id="pause" class="fa-solid fa-pause"></i>
+                        <i id="navNext" class="fa-solid fa-chevron-circle-right"></i>
+                    </div>
+                </div>
+                <div id="community-feeding__slider--pagination"></div>
+            </section>
+
+            <h2 class="center">Videos</h2>
+
+            <div id="videos">
+                <div class="video-container">
+                    <video src="videos/vid-1.mp4" id="vid1" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-2.mp4" id="vid2" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-3.mp4" id="vid3" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-4.mp4" id="vid4" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-5.mp4" id="vid5" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-6.mp4" id="vid6" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-7.mp4" id="vid7" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-8.mp4" id="vid8" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+                <div class="video-container">
+                    <video src="videos/vid-9.mp4" id="vid9" type="video/mp4"></video>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play-circle"></i>
+                    <div class="video__transparent-bg"></div>
+                </div>
+            </div>
+            
+            <section id="top">
+                <a href="#" title="Back to Top">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="copyrightYear"></span> All Rights Reserved | Giving With A Purpose</p>
+        </footer>
+
+    </body>
+</html>

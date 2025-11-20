@@ -1,0 +1,96 @@
+/* ================== FAQ Page ================ */
+
+#main__faq {
+  min-height: 75vh;
+  background: url("../images/logo.jpg") center / contain no-repeat fixed;
+}
+
+#faq-container {
+  min-height: 75vh;
+
+  padding: var(--SPACING-MEDIUM) var(--SPACING-MEDIUM) 10vh;
+
+  background: var(--BG-TRANSPARENT--DARK);
+  color: gold;
+}
+
+#faq-container img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+#main__faq h1 {
+  margin-top: var(--SPACING-SMALL);
+}
+
+.question-box {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: var(--SPACING-SMALL);
+        column-gap: var(--SPACING-SMALL);
+
+  margin: var(--SPACING-LARGE) 0 var(--SPACING-MEDIUM);
+}
+
+.question {
+  font-size: var(--FS-SMALL);
+}
+
+.question-box i {
+  color: silver;
+  font-size: var(--FS-MEDIUM);
+}
+
+.answer {
+  display: none;
+  color: peachpuff;
+}
+
+#faq-container a {
+  color: dodgerblue;
+  transition: all .5s;
+  font-style: italic;
+}
+
+#faq-container a:is(:hover, :focus) {
+  color: lightblue;
+}
+
+#faq-container a:active {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+p#more-info {
+  margin-top: var(--SPACING-MEDIUM);
+  font-size: var(--FS-MEDIUM);
+  color: white;
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media only screen and (min-width: 992px) {
+
+  #faq-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  #faq-container img {
+    width: 30%;
+    margin: 0;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20vh;
+  }
+
+  #faq-content {
+    width: 70%;
+  }
+}
