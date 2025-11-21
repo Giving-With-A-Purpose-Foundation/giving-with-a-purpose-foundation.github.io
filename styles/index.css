@@ -23,7 +23,7 @@
 
   background: var(--BG-TRANSPARENT--DARK);
   margin-top: 90vh;
-  padding: var(--SPACING-MEDIUM) 0 10vh;
+  padding: var(--SPACING-MEDIUM) var(--SPACING-SMALL) 10vh;
 
 }
 
@@ -47,7 +47,7 @@ p#home__intro--mission {
   font-style: italic;
   font-weight: bold;
   font-size: var(--FS-LARGER);
-  font-family: cursive;
+  font-family: sans-serif;
 
   margin-top: var(--SPACING-SMALL);
 }
