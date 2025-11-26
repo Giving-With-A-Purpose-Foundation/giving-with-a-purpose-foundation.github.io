@@ -13,7 +13,7 @@ h2 {
   font-size: var(--FS-LARGE);
 }
 
-#community-feeding {
+#community-events {
   display: flex;
   flex-direction: column;
   row-gap: var(--SPACING-MEDIUM);
@@ -23,7 +23,7 @@ h2 {
 
 }
 
-#community-feeding__slider-container {
+#community-events__slider-container {
   display: flex;
   flex-direction: column;
   row-gap: var(--SPACING-MEDIUM);
@@ -34,7 +34,7 @@ h2 {
   overflow: hidden;
 }
 
-#community-feeding__slider {
+#community-events__slider {
   min-height: 200px;
   height: 35vh;
   display: flex;
@@ -42,14 +42,14 @@ h2 {
   box-shadow: 0 .25em .125em #000;
 }
 
-#community-feeding__slider img {
+#community-events__slider img {
   display: block;
   height: 100%;
   width: auto;
   margin: auto;
 }
 
-#community-feeding__slider-controls  {
+#community-events__slider-controls  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ h2 {
   font-size: var(--FS-LARGE);
 }
 
-#community-feeding__slider--pagination {
+#community-events__slider--pagination {
   position: relative;
   z-index: 300;
 
@@ -76,7 +76,7 @@ h2 {
   box-shadow: .25em 0 .125em #000;
 }
 
-#community-feeding__slider--pagination img {
+#community-events__slider--pagination img {
   width: 4em;
   height: auto;
 }
@@ -104,7 +104,7 @@ h2 {
   pointer-events: none;
 }
 
-video {
+.video-container img {
   position: absolute;
 
   width: 100%;
@@ -145,19 +145,19 @@ video {
 /* ========== RESPONSIVE DESIGN ========== */
 
 @media only screen and (min-width: 992px) {
-  #community-feeding {
+  #community-events {
     flex-direction: row-reverse;
   }
 
-  #community-feeding__slider-container {
+  #community-events__slider-container {
     width: 55%;
   }
 
-  #community-feeding__slider {
+  #community-events__slider {
     height: 50vh;
   }
 
-  #community-feeding__slider--pagination {
+  #community-events__slider--pagination {
     width: 45%;
   }
 
@@ -167,11 +167,11 @@ video {
 }
 
 @media only screen and (min-width: 1200px) {
-  #community-feeding__slider-container {
+  #community-events__slider-container {
     width: 60%;
   }
 
-  #community-feeding__slider--pagination {
+  #community-events__slider--pagination {
     width: 40%;
   }
 
@@ -181,11 +181,11 @@ video {
 }
 
 @media only screen and (min-width: 1400px) {
-  #community-feeding__slider-container {
+  #community-events__slider-container {
     width: 65%;
   }
 
-  #community-feeding__slider--pagination {
+  #community-events__slider--pagination {
     width: 35%;
   }
 }
